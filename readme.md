@@ -6,3 +6,5 @@
 * https://www.w3schools.com/cssref/css3_pr_mediaquery.asp
 * https://developer.mozilla.org/en-US/docs/Web/CSS/min
 * https://developer.mozilla.org/en-US/docs/Web/CSS/calc
+* https://picsum.photos/
+* https://unsplash.com/photos/keDQc1t0iFI
