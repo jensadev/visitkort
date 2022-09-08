@@ -1,0 +1,19 @@
+body {
+    display: grid;
+    place-content: center;
+}
+
+main {
+    --card-width: 30rem;
+    width: var(--card-width);
+    height: calc(var(--card-width) / 1.75);
+    border: 1px solid #333;
+}
+
+@media (max-width: 32rem) {
+    main {
+        background-color: red;
+        --card-width: 17rem;
+        height: calc(var(--card-width) * 1.75);
+    }
+}
