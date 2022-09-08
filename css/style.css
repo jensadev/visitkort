@@ -3,19 +3,39 @@ body {
     place-content: center;
 }
 
-main {
+.card {
     --card-width: 30rem;
     width: var(--card-width);
     height: calc(var(--card-width) / 1.75);
     border: 1px solid #333;
 
     transition: width 0.2s ease-in-out, height 0.2s ease-in-out;
+
+    padding: 1rem;
+}
+
+.card__inner {
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+
+.card__body {
 }
 
 @media (max-width: 32rem) {
-    main {
-        background-color: red;
+    .card {
         --card-width: 17rem;
         height: calc(var(--card-width) * 1.75);
+    }
+    .card__inner {
+        flex-direction: column;
+        align-items: normal;
+    }
+}
+
+@media (min-width: 32rem) {
+    .card__img {
+        width: 40%;
     }
 }
